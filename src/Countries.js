@@ -18,10 +18,10 @@ class Countries extends Component {
     };
   }
 }
- 
+ /*
 componentDidMount() {
   this.fetchData(this.state.searchterm);
-}
+}*/
 
 fetchData = (newRegion) => {
   fetch(`${PATH_BASE}${newRegion}`)
