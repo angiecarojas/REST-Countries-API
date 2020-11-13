@@ -19,3 +19,23 @@ class Countries extends Component {
   }
 }
  
+componentDidMount() {
+  this.fetchData(this.state.searchterm);
+}
+
+fetchData = (newRegion) => {
+  fetch(`${PATH_BASE}${newRegion}`)
+    .then((response) => response.json())
+    .then((countries) => {
+      this.setState({ countries: countries, countriesTemp: countries });
+    })
+    .catch((error) => error);
+};
+
+regionLoading = (event) => {
+  if (event.target.value === "ALL") {
+    this.fetchData("all");
+  } else {
+    this.fetchData(`region/${event.target.value}`);
+  }
+};
