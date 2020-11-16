@@ -1,12 +1,19 @@
 import React from "react";
+import { Router } from "@reach/router";
 import { render } from "react-dom";
-import "./index.css";
+import Countries from "./Countries";
+import DetallesCountry from "./DetallesCountry";
+import "./style.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = () => {
+  return (
+    <div>
+      <Router>
+        <Countries path="/" />
+        <DetallesCountry path="/details/:name" />
+      </Router>
+    </div>
+  );
+};
 
 render(<App />, document.getElementById("root"));
