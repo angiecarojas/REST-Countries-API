@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "@reach/router";
-import { render } from "react-dom";
+
 
 const PATH_BASE = "https://restcountries.eu/rest/v2/";
 const DEFAULT = "all";

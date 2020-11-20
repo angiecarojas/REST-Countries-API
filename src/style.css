@@ -56,6 +56,20 @@ form {
   padding: 0 10px;
 }
 
+select::-ms-expand {
+  border: none;
+  background-color: white;
+}
+
+.input-country {
+  flex: 0 0 90%;
+  height: 50px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto 30px;
+  justify-self: center;
+}
 
 .input-div {
   display: flex;
