@@ -76,6 +76,11 @@ form {
   border: none;
 }
 
+.country-body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
 
 .country-flag {
   width: 80%;
@@ -86,6 +91,39 @@ form {
 .country-bottom {
   width: 80%;
   margin: 0 auto;
+}
+
+.top {
+  color: hsl(200, 15%, 8%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 0;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.country-card {
+  background-color: white;
+  width: 80%;
+  height: 330px;
+  border-radius: 10px;
+  margin: 30px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  color: hsl(200, 15%, 8%);
+}
+
+.country-img {
+  object-fit: cover;
+  object-position: center center;
+  justify-self: stretch;
+  width: 100%;
+  height: 160px;
+  flex: 0 0 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 
