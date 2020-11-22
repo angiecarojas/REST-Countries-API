@@ -27,11 +27,6 @@ body {
   margin-left: 5px;
 }
 
-
-select::-ms-expand {
-  border: none;
-  background-color: white;
-}
 .search-tab {
   display: flex;
   flex-flow: row wrap;
@@ -140,7 +135,6 @@ select::-ms-expand {
   border-top-right-radius: 10px;
 }
 
-
 .country-details {
   margin-left: 30px;
 }
@@ -155,6 +149,12 @@ select::-ms-expand {
   margin-right: 10px;
 }
 
+.country {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+
 .back {
   width: 100%;
   margin: 0;
@@ -166,6 +166,11 @@ select::-ms-expand {
   background-color: white;
   box-shadow: 5px 5px 10px grey;
   margin-left: 40px;
+}
+
+.country {
+  display: flex;
+  flex: row nowrap;
 }
 
 .country-description-1 {
@@ -194,23 +199,73 @@ select::-ms-expand {
     margin: 0 auto;
   }
 
-
+  .country-card {
+    flex: 0 0 20%;
+    margin: 30px 2%;
+  }
   .input-tab {
     width: 100%;
     margin-left: 10px;
     border: none;
+  }
+  .search-tab {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  form {
+    flex: 0 0 50%;
+    margin: 0;
   }
 
   .input-country {
     margin: 0;
   }
 
+  .input-div {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .dropdown {
+    flex: 0 0 15%;
+    height: 50px;
+    margin-right: 30px;
+    padding: 0 20px;
+  }
 
+  .country {
+    display: flex;
+    flex: row nowrap;
+  }
+
+  .country-body {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .country-bottom {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 50%;
+  }
+
+  .border-country {
+    flex: 0 0 100%;
+    justify-self: center;
+    margin-left: 60px;
+  }
   .border-group {
     display: inline;
     margin: 0;
   }
 
+  .country-flag {
+    flex: 0 0 40%;
+    width: 30%;
+  }
 
   .country-description-2 {
     margin-top: 80px;
