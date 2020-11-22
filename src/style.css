@@ -168,6 +168,11 @@ select::-ms-expand {
   margin-left: 40px;
 }
 
+/* div [class^="country-description-"] {
+  flex: 0 0 90%;
+  justify-self: flex-start;
+} */
+
 .country {
   display: flex;
   flex: row nowrap;
