@@ -93,8 +93,9 @@ select::-ms-expand {
 
 .country-flag {
   width: 80%;
-  height: 300px;
-  margin: 30px auto;
+  /*height: 300px;*/
+  max-height: 28rem;
+  margin: 30px ;
 }
 
 .country-bottom {
