@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "@reach/router";
 
-
 const PATH_BASE = "https://restcountries.eu/rest/v2/";
 const DEFAULT = "all";
 class Countries extends Component {
